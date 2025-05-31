@@ -4,6 +4,8 @@ services:
   app:
     build: .
     working_dir: /var/www/html
+    labels:
+      - "coolify.port=8000"
     environment:
       - APP_ENV
       - APP_DEBUG
